@@ -1,0 +1,434 @@
+.about-container {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    overflow: hidden; /* Hide any content that overflows during transitions */
+}
+
+.about-title {
+    font-family: 'Exo', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    color: #4A4F55;
+    margin-left: 80px;
+    margin-top: 80px;
+    margin-bottom: 48px;
+    line-height: 121.414%;
+}
+
+.about-content {
+    display: flex;
+    margin-left: 80px;
+    margin-right: 80px;
+    gap: 60px;
+    align-items: center
+    
+}
+
+.left-column {
+    flex: 1;
+}
+
+.main-headline {
+    /* font-family: 'Bricolage Grotesque', sans-serif; */
+    font-size: 64px;
+    width: 489px;
+    line-height: 150%;
+    color: #000000;
+    margin: 0;
+}
+
+.headline-line {
+    display: block;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
+.headline-line.italic {
+    font-style: italic;
+    font-family: 'IBM Plex Serif', serif;
+    font-weight: 400;
+    text-align: right;
+}
+
+.right-column {
+    /* flex: 1; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* padding-top: 60px; */
+
+
+}
+
+.description {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    color: #000000;
+    margin-bottom: 30px;
+    width: 391px;
+    font-weight: 600;
+    line-height: 175%;
+    /* 35px */
+    letter-spacing: 0.6px;
+}
+
+.how-it-works-btn {
+    color: white;
+    border: none;
+    border-radius: 32px;
+    background: #606167;
+    padding: 8px 16px;
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 121.414%;
+    /* 14.57px */
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    width: fit-content;
+}
+
+.how-it-works-btn:hover {
+    background-color: #555;
+}
+
+/* Responsive design */
+@media (max-width: 1200px) {
+    .about-title {
+        margin-left: 60px;
+        font-size: clamp(20px, 2.5vw, 24px);
+    }
+
+    .about-content {
+        margin-left: 60px;
+        margin-right: 60px;
+        gap: clamp(30px, 5vw, 60px);
+    }
+
+    .main-headline {
+        width: 100%;
+        max-width: 450px;
+        font-size: clamp(48px, 6vw, 64px);
+    }
+
+    .description {
+        width: 100%;
+        max-width: 350px;
+        font-size: clamp(16px, 2vw, 20px);
+    }
+}
+
+@media (max-width: 1024px) {
+    .about-content {
+        margin-left: 40px;
+        margin-right: 40px;
+        gap: 40px;
+    }
+
+    .main-headline {
+        width: 100%;
+        max-width: 400px;
+        font-size: clamp(42px, 5.5vw, 56px);
+    }
+
+    .description {
+        max-width: 320px;
+        font-size: clamp(15px, 1.8vw, 18px);
+    }
+}
+
+@media (max-width: 768px) {
+    .about-title {
+        margin-left: 20px;
+        font-size: clamp(18px, 3vw, 22px);
+        margin-bottom: clamp(24px, 4vw, 32px);
+    }
+
+    .about-content {
+        margin-left: 20px;
+        margin-right: 20px;
+        flex-direction: column;
+        gap: clamp(20px, 4vw, 32px);
+        align-items: flex-start;
+    }
+
+    .main-headline {
+        width: 100%;
+        font-size: clamp(36px, 8vw, 48px);
+        line-height: 1.2;
+    }
+
+    .headline-line.italic {
+        text-align: left;
+    }
+
+    .right-column {
+        padding-top: 0;
+        width: 100%;
+    }
+
+    .description {
+        max-width: 100%;
+        font-size: clamp(14px, 3vw, 18px);
+        margin-bottom: clamp(20px, 4vw, 30px);
+    }
+
+    .how-it-works-btn {
+        font-size: clamp(12px, 2.5vw, 16px);
+        padding: clamp(8px, 2vw, 12px) clamp(16px, 4vw, 24px);
+    }
+}
+
+@media (max-width: 480px) {
+    .about-title {
+        margin-left: 16px;
+        font-size: clamp(16px, 4vw, 20px);
+        margin-top: clamp(40px, 8vw, 80px);
+    }
+
+    .about-content {
+        margin-left: 16px;
+        margin-right: 16px;
+        gap: clamp(16px, 4vw, 24px);
+    }
+
+    .main-headline {
+        font-size: clamp(28px, 10vw, 40px);
+        line-height: 1.1;
+    }
+
+    .description {
+        font-size: clamp(13px, 4vw, 16px);
+        line-height: 1.4;
+    }
+
+    .how-it-works-btn {
+        font-size: clamp(11px, 3vw, 14px);
+        padding: clamp(6px, 2vw, 10px) clamp(12px, 4vw, 20px);
+    }
+}
+
+/* Navigation Section */
+.navigation-section {
+    margin-top: 112px;
+    /* margin-bottom: 40px; */
+}
+
+.nav-container {
+    margin: 0 80px;
+}
+
+.nav-tabs {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 12px;
+    justify-content: space-around;
+}
+
+.nav-tab {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #999;
+    cursor: pointer;
+    transition: color 0.2s ease;
+    position: relative;
+}
+
+.nav-tab.active {
+    color: #333;
+    font-weight: 500;
+}
+
+.nav-tab.active::after {
+    content: '';
+    position: absolute;
+    bottom: -12px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: #333;
+    border-radius: 1px;
+}
+
+.nav-tab:hover {
+    color: #666;
+}
+
+.nav-tab {
+    cursor: pointer;
+    user-select: none;
+    transition: color 0.2s ease;
+}
+
+.nav-separator {
+    height: 1px;
+    background-color: #e0e0e0;
+    width: 100%;
+}
+
+/* Tab Content Container */
+.tab-content-container {
+    width: 100%;
+    margin-top: 0;
+    background-color: #ffffff;
+    position: relative;
+    overflow: hidden;
+    min-height: 400px; /* Reasonable minimum height */
+}
+
+.tab-content-wrapper {
+    display: flex;
+    width: 500%; /* 5 tabs × 100% each */
+    transition: transform 0.4s ease-in-out;
+}
+
+.tab-content-item {
+    width: 20%; /* 100% / 5 tabs */
+    flex-shrink: 0;
+}
+
+.tab-content {
+    padding: 40px 80px;
+    text-align: center;
+    color: #666;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    min-height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+/* Responsive design for navigation section */
+@media (max-width: 1200px) {
+    .navigation-section {
+        margin-top: clamp(60px, 10vw, 112px);
+        margin-bottom: clamp(30px, 5vw, 40px);
+    }
+
+    .nav-container {
+        margin: 0 60px;
+    }
+
+    .nav-tabs {
+        gap: clamp(20px, 4vw, 40px);
+    }
+
+    .nav-tab {
+        font-size: clamp(14px, 1.8vw, 16px);
+    }
+}
+
+@media (max-width: 1024px) {
+    .nav-container {
+        margin: 0 40px;
+    }
+
+    .nav-tabs {
+        gap: clamp(15px, 3vw, 30px);
+    }
+}
+
+@media (max-width: 768px) {
+    .navigation-section {
+        margin-top: clamp(40px, 8vw, 60px);
+        margin-bottom: clamp(20px, 4vw, 30px);
+    }
+
+    .nav-container {
+        margin: 0 20px;
+    }
+
+    .nav-tabs {
+        gap: clamp(12px, 3vw, 20px);
+        overflow-x: auto;
+        padding-bottom: 8px;
+        scrollbar-width: thin;
+        scrollbar-color: #ccc transparent;
+    }
+
+    .nav-tabs::-webkit-scrollbar {
+        height: 4px;
+    }
+
+    .nav-tabs::-webkit-scrollbar-track {
+        background: transparent;
+    }
+
+    .nav-tabs::-webkit-scrollbar-thumb {
+        background-color: #ccc;
+        border-radius: 2px;
+    }
+
+    .nav-tab {
+        font-size: clamp(12px, 2.5vw, 14px);
+        white-space: nowrap;
+        flex-shrink: 0;
+        padding: 8px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .navigation-section {
+        margin-top: clamp(30px, 6vw, 40px);
+        margin-bottom: clamp(16px, 3vw, 20px);
+    }
+
+    .nav-container {
+        margin: 0 16px;
+    }
+
+    .nav-tabs {
+        gap: clamp(8px, 2vw, 15px);
+        padding-bottom: 6px;
+    }
+
+    .nav-tab {
+        font-size: clamp(11px, 3vw, 13px);
+        padding: 6px 0;
+    }
+}
+
+/* Responsive styles for tab content */
+@media (max-width: 1200px) {
+    .tab-content {
+        padding: 30px 60px;
+    }
+    
+    .tab-content-container {
+        min-height: 350px;
+    }
+}
+
+@media (max-width: 768px) {
+    .tab-content {
+        padding: 20px;
+        font-size: 16px;
+        min-height: 150px;
+    }
+    
+    .tab-content-container {
+        min-height: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .tab-content {
+        padding: 16px;
+        font-size: 14px;
+        min-height: 120px;
+    }
+    
+    .tab-content-container {
+        min-height: 250px;
+    }
+}

@@ -1,0 +1,87 @@
+.atlas-conversation-section {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background-color: #ffffff;
+}
+
+.atlas-conversation-container {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.atlas-conversation-title {
+    color: #4A4F55;
+    font-family: Exo;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 121.414%; /* 58.279px */
+  margin-left: 80px;
+  margin-top: 80px;
+  margin-bottom: 64px;
+
+}
+.atlas-conversation-title-conv {
+    font-family: 'Roboto', sans-serif;
+}
+.atlas-conversation-image-container {
+  margin: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.atlas-conversation-image {
+  max-width: 100%;
+  height: auto;
+}
+
+
+
+/* Responsive design - matching About section */
+@media (max-width: 1200px) {
+  .atlas-conversation-title {
+    margin-left: 60px;
+    font-size: clamp(20px, 2.5vw, 24px);
+  }
+  
+  .atlas-conversation-image-container {
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .atlas-conversation-image-container {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .atlas-conversation-title {
+    margin-left: 20px;
+    font-size: clamp(18px, 3vw, 22px);
+    margin-bottom: clamp(24px, 4vw, 32px);
+  }
+  
+  .atlas-conversation-image-container {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .atlas-conversation-title {
+    margin-left: 16px;
+    font-size: clamp(16px, 4vw, 20px);
+    margin-top: clamp(40px, 8vw, 80px);
+  }
+  
+  .atlas-conversation-image-container {
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+}
