@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/website-beta/static/css/main.8bcad22b.css",
+    "main.js": "/website-beta/static/js/main.a856556b.js",
+    "static/js/453.0fc3f397.chunk.js": "/website-beta/static/js/453.0fc3f397.chunk.js",
+    "static/media/video.mp4": "/website-beta/static/media/video.1fca7453ee076f5baa99.mp4",
+    "static/media/video.png": "/website-beta/static/media/video.ad9c49aa08dd9d773f85.png",
+    "static/media/health-1.png": "/website-beta/static/media/health-1.bb7a614519af672e186f.png",
+    "static/media/daily-life-1.png": "/website-beta/static/media/daily-life-1.d141a6893174c4746384.png",
+    "static/media/privacy-1.png": "/website-beta/static/media/privacy-1.027fe65caaffbc1641fe.png",
+    "static/media/news-2.png": "/website-beta/static/media/news-2.3da035c17f763abdc6db.png",
+    "static/media/money-2.png": "/website-beta/static/media/money-2.9e25ca4494f1f20087c3.png",
+    "static/media/health-2.png": "/website-beta/static/media/health-2.d25c8324ac06b0904836.png",
+    "static/media/daily-life-2.png": "/website-beta/static/media/daily-life-2.130d8e917591d757affb.png",
+    "static/media/home-1.png": "/website-beta/static/media/home-1.5aeb3b1503a9ac2628b7.png",
+    "static/media/home-2.png": "/website-beta/static/media/home-2.1168f8b763526408b645.png",
+    "static/media/news-1.png": "/website-beta/static/media/news-1.2705c13ad470a1382383.png",
+    "static/media/money-1.png": "/website-beta/static/media/money-1.fb9d0b8b2af3a8a57b26.png",
+    "static/media/landing.jpg": "/website-beta/static/media/landing.e8a6eb90e2078f9fcbae.jpg",
+    "static/media/conv.png": "/website-beta/static/media/conv.1ef36a408e51d7d2b74e.png",
+    "static/media/integration.png": "/website-beta/static/media/integration.adca00ae94eb503c2f6f.png",
+    "static/media/google.png": "/website-beta/static/media/google.b9a9db3c135ba3ed43b2.png",
+    "static/media/privacy-2.png": "/website-beta/static/media/privacy-2.76a21a5b63b316ca26c0.png",
+    "index.html": "/website-beta/index.html",
+    "main.8bcad22b.css.map": "/website-beta/static/css/main.8bcad22b.css.map",
+    "main.a856556b.js.map": "/website-beta/static/js/main.a856556b.js.map",
+    "453.0fc3f397.chunk.js.map": "/website-beta/static/js/453.0fc3f397.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8bcad22b.css",
+    "static/js/main.a856556b.js"
+  ]
+}
