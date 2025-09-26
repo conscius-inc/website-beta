@@ -1,21 +1,16 @@
 import React, { useState } from 'react';
 import './VideoSection.css';
 import videoImage from '../assets/video.png';
-import video from '../assets/video.mp4';
 
 const VideoSection = () => {
-  const [isLoading, setIsLoading] = useState(false);
+  const [showLoading, setShowLoading] = useState(false);
 
-  const handleLoadStart = () => {
-    setIsLoading(true);
-  };
-
-  const handleCanPlay = () => {
-    setIsLoading(false);
-  };
-
-  const handleLoadedData = () => {
-    setIsLoading(false);
+  const handleVideoClick = () => {
+    setShowLoading(true);
+    // Hide loading message after 3 seconds
+    setTimeout(() => {
+      setShowLoading(false);
+    }, 3000);
   };
 
   return (
@@ -23,20 +18,21 @@ const VideoSection = () => {
       <div className="video-container">
         <h2 className="video-title">ATLAS <span className="video-title-experience">Experience</span></h2>
         <div className="video-image-container">
-          <div className={`video-wrapper ${isLoading ? 'loading' : ''}`}>
-          <video
-            className="atlas-video"
-            controls
-            poster={videoImage}
-            preload="metadata"
-            onLoadStart={handleLoadStart}
-            onCanPlay={handleCanPlay}
-            onLoadedData={handleLoadedData}
-          >
-            <source src={video} type="video/mp4" />
-            <source src={video} type="video/webm" />
-            Your browser does not support the video tag.
-          </video>
+          <div className="video-wrapper" onClick={handleVideoClick}>
+            <img 
+              src={videoImage} 
+              alt="Video Coming Soon" 
+              className="video-poster"
+              style={{ cursor: 'pointer' }}
+            />
+            {showLoading && (
+              <div className="loading-overlay">
+                <div className="loading-message">
+                  <div className="loading-spinner"></div>
+                  <p>Video Loading Soon...</p>
+                </div>
+              </div>
+            )}
           </div>
         </div>
       </div>
