@@ -21,7 +21,7 @@ const VideoSection = () => {
           <div className="video-wrapper" onClick={handleVideoClick}>
             <img 
               src={videoImage} 
-              alt="Video Coming Soon" 
+              alt="Coming Soon" 
               className="video-poster"
               style={{ cursor: 'pointer' }}
             />
@@ -29,7 +29,7 @@ const VideoSection = () => {
               <div className="loading-overlay">
                 <div className="loading-message">
                   <div className="loading-spinner"></div>
-                  <p>Video Loading Soon...</p>
+                  <p>Coming Soon...</p>
                 </div>
               </div>
             )}
